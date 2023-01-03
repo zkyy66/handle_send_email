@@ -3,14 +3,15 @@ package main
 import (
 	"crypto/tls"
 	"fmt"
-	"github.com/jordan-wright/email"
-	"github.com/xuri/excelize/v2"
-	_ "github.com/xuri/excelize/v2"
 	"log"
 	"math/rand"
 	"net/smtp"
 	"os"
 	"time"
+
+	"github.com/jordan-wright/email"
+	"github.com/xuri/excelize/v2"
+	_ "github.com/xuri/excelize/v2"
 )
 
 const (
@@ -66,7 +67,7 @@ func handleMail(toUserEmail string, logger *log.Logger, logFile *os.File) {
 	if err != nil {
 		//发送失败
 		logger.Printf("email %s;err：%s\n", toUserEmail, err)
-		log.Fatalf("send error email:%s; %s\n", toUserEmail, err)
+		//log.Fatalf("send error email:%s; %s\n", toUserEmail, err)
 	}
 	//发送成功
 	logger.Printf("email %s；success：%s\n", toUserEmail, err)
