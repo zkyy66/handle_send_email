@@ -1,0 +1,8 @@
+[send_email_res]2022/12/31 10:29:45 main.go:68: 开始发送-发送邮件用户：249575799@qq.com
+[send_email_res]2022/12/31 10:29:45 main.go:75: email 249575799@qq.com；success：%!s(<nil>)
+[send_email_res]2022/12/31 10:29:48 main.go:68: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2022/12/31 10:29:48 main.go:75: email ages521you@hotmail.com；success：%!s(<nil>)
+[send_email_res]2022/12/31 10:29:50 main.go:68: 开始发送-发送邮件用户：zhouwentian@5eplay.com
+[send_email_res]2022/12/31 10:29:50 main.go:75: email zhouwentian@5eplay.com；success：%!s(<nil>)
+[send_email_res]2022/12/31 10:29:53 main.go:68: 开始发送-发送邮件用户：zhengkaizhen@5eplay.com
+[send_email_res]2022/12/31 10:29:53 main.go:75: email zhengkaizhen@5eplay.com；success：%!s(<nil>)
