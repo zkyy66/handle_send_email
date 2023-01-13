@@ -1,16 +1,32 @@
-[send_email_res]2022/12/31 10:29:45 main.go:68: 开始发送-发送邮件用户：249575799@qq.com
-[send_email_res]2022/12/31 10:29:45 main.go:75: email 249575799@qq.com；success：%!s(<nil>)
-[send_email_res]2022/12/31 10:29:48 main.go:68: 开始发送-发送邮件用户：ages521you@hotmail.com
-[send_email_res]2022/12/31 10:29:48 main.go:75: email ages521you@hotmail.com；success：%!s(<nil>)
-[send_email_res]2022/12/31 10:29:50 main.go:68: 开始发送-发送邮件用户：zhouwentian@5eplay.com
-[send_email_res]2022/12/31 10:29:50 main.go:75: email zhouwentian@5eplay.com；success：%!s(<nil>)
-[send_email_res]2022/12/31 10:29:53 main.go:68: 开始发送-发送邮件用户：zhengkaizhen@5eplay.com
-[send_email_res]2022/12/31 10:29:53 main.go:75: email zhengkaizhen@5eplay.com；success：%!s(<nil>)
-[send_email_res]2023/01/10 14:37:39 main.go:67: 开始发送-发送邮件用户：249575799@qq.com
-[send_email_res]2023/01/10 14:37:39 main.go:74: email 249575799@qq.com；success：%!s(<nil>)
-[send_email_res]2023/01/10 14:37:43 main.go:67: 开始发送-发送邮件用户：ages521you@hotmail.com
-[send_email_res]2023/01/10 14:37:43 main.go:74: email ages521you@hotmail.com；success：%!s(<nil>)
-[send_email_res]2023/01/10 14:37:46 main.go:67: 开始发送-发送邮件用户：zhouwentian@5eplay.com
-[send_email_res]2023/01/10 14:37:46 main.go:74: email zhouwentian@5eplay.com；success：%!s(<nil>)
-[send_email_res]2023/01/10 14:37:49 main.go:67: 开始发送-发送邮件用户：zhengkaizhen@5eplay.com
-[send_email_res]2023/01/10 14:37:49 main.go:74: email zhengkaizhen@5eplay.com；success：%!s(<nil>)
+[send_email_res]2023/01/13 19:05:01 main.go:136: 开始发送-发送邮件用户：1599366641@qq.com
+[send_email_res]2023/01/13 19:05:01 main.go:143: email 1599366641@qq.com；success：%!s(<nil>)
+[send_email_res]2023/01/13 19:05:01 main.go:136: 开始发送-发送邮件用户：hxl1599366641@sina.com
+[send_email_res]2023/01/13 19:05:01 main.go:143: email hxl1599366641@sina.com；success：%!s(<nil>)
+[send_email_res]2023/01/13 19:05:01 main.go:136: 开始发送-发送邮件用户：hxl1599366641@163.com
+[send_email_res]2023/01/13 19:05:01 main.go:143: email hxl1599366641@163.com；success：%!s(<nil>)
+[send_email_res]2023/01/13 19:05:01 main.go:136: 开始发送-发送邮件用户：diwangtseb@dingtalk.com
+[send_email_res]2023/01/13 19:05:01 main.go:143: email diwangtseb@dingtalk.com；success：%!s(<nil>)
+[send_email_res]2023/01/13 19:05:02 main.go:136: 开始发送-发送邮件用户：shanqiuoji@qq.com
+[send_email_res]2023/01/13 19:05:02 main.go:143: email shanqiuoji@qq.com；success：%!s(<nil>)
+[send_email_res]2023/01/13 19:05:02 main.go:136: 开始发送-发送邮件用户：1602146377@qq.com
+[send_email_res]2023/01/13 19:05:02 main.go:143: email 1602146377@qq.com；success：%!s(<nil>)
+[send_email_res]2023/01/13 19:05:02 main.go:136: 开始发送-发送邮件用户：xiulei.He1599366641@gmail.com
+[send_email_res]2023/01/13 19:05:02 main.go:143: email xiulei.He1599366641@gmail.com；success：%!s(<nil>)
+[send_email_res]2023/01/13 19:05:02 main.go:136: 开始发送-发送邮件用户：2893454750@qq.com
+[send_email_res]2023/01/13 19:05:02 main.go:143: email 2893454750@qq.com；success：%!s(<nil>)
+[send_email_res]2023/01/13 19:05:02 main.go:136: 开始发送-发送邮件用户：jiangyao@5eplay.com
+[send_email_res]2023/01/13 19:05:02 main.go:143: email jiangyao@5eplay.com；success：%!s(<nil>)
+[send_email_res]2023/01/13 19:05:02 main.go:136: 开始发送-发送邮件用户：772079926@qq.com
+[send_email_res]2023/01/13 19:05:02 main.go:143: email 772079926@qq.com；success：%!s(<nil>)
+[send_email_res]2023/01/13 19:05:15 main.go:136: 开始发送-发送邮件用户：zhaixinlong@dingtalk.com
+[send_email_res]2023/01/13 19:05:15 main.go:143: email zhaixinlong@dingtalk.com；success：%!s(<nil>)
+[send_email_res]2023/01/13 19:05:15 main.go:136: 开始发送-发送邮件用户：276373799@qq.com
+[send_email_res]2023/01/13 19:05:15 main.go:143: email 276373799@qq.com；success：%!s(<nil>)
+[send_email_res]2023/01/13 19:05:15 main.go:136: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2023/01/13 19:05:15 main.go:143: email ages521you@hotmail.com；success：%!s(<nil>)
+[send_email_res]2023/01/13 19:05:15 main.go:136: 开始发送-发送邮件用户：394918198@qq.com
+[send_email_res]2023/01/13 19:05:15 main.go:143: email 394918198@qq.com；success：%!s(<nil>)
+[send_email_res]2023/01/13 19:05:15 main.go:136: 开始发送-发送邮件用户：zhaixinlong@dingtalk.com
+[send_email_res]2023/01/13 19:05:15 main.go:143: email zhaixinlong@dingtalk.com；success：%!s(<nil>)
+[send_email_res]2023/01/13 19:05:15 main.go:136: 开始发送-发送邮件用户：18056151033@163.com
+[send_email_res]2023/01/13 19:05:15 main.go:143: email 18056151033@163.com；success：%!s(<nil>)

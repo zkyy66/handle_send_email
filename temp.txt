@@ -1,0 +1,345 @@
+package main
+
+//
+//import (
+//	"crypto/tls"
+//	"fmt"
+//	"log"
+//	"math/rand"
+//	"net/smtp"
+//	"os"
+//	"regexp"
+//	"time"
+//
+//	"github.com/jordan-wright/email"
+//	"github.com/xuri/excelize/v2"
+//	_ "github.com/xuri/excelize/v2"
+//)
+//
+//const (
+//	Sender            = "activity@5eplay.com"
+//	AuthorizationCode = "VDMSmoQE92KnewP2"
+//	SmtpServer        = "smtp.exmail.qq.com"
+//	SendAddr          = SmtpServer + ":465"
+//)
+//
+//func main() {
+//	// handleMail()
+//	// handleExcel()
+//	// personEmail()
+//	//handleMailTwo()
+//	//a := time.Now().Format("2006010215")
+//	//fmt.Println(a)
+//	//fmt.Println(VerifyEmailFormat("xiulei.He1599366641@gmail.com"))
+//	res := compressStr("   xiulei.Her1231321.qq.com")
+//	fmt.Println(res)
+//}
+//
+//// 主题标题
+//func themeTitle(key int32) string {
+//	var themeArr = []string{
+//		"【5E对战平台】元旦福利大放送",
+//		"【5E对战平台】元旦盛典福利",
+//		"【5E对战平台】元旦三重活动赢豪礼",
+//		"【5E对战平台】元旦盛典享三重豪礼",
+//		"【5E对战平台】元旦盛典享豪礼",
+//		"【5E对战平台】元旦福利大放送",
+//		"【5E对战平台】元旦盛典福利",
+//		"【5E对战平台】元旦三重活动赢豪礼",
+//		"【5E对战平台】元旦盛典享三重豪礼",
+//		"【5E对战平台】元旦盛典享豪礼",
+//	}
+//	return themeArr[key]
+//}
+//
+//// 处理发送邮件逻辑
+//func handleMail(toUserEmail string, logger *log.Logger, logFile *os.File) {
+//
+//	e := email.NewEmail()
+//	//设置发送方的邮箱
+//	e.From = "5E对战平台 <activity@5eplay.com>"
+//	// 设置接收方的邮箱
+//	e.To = []string{"ages521you@hotmail.com"}
+//	//设置主题
+//	randKey := generateRandomNumber(0, 10, 1)
+//	subjectTitle := themeTitle(int32(randKey[0]))
+//	e.Subject = subjectTitle
+//	//设置文件发送的内容
+//	e.HTML = []byte(`
+//					<img data-imagetype="External" src="https://oss.5eplay.com/images/act/3db413d2c02246088b6efde4c443ec9e.jpg" class="x_fullMobileWidth" width="620" alt="5E对战平台" title="5E对战平台" style="display:block; height:auto; border:0; width:700px; max-width:100%">`)
+//	//设置服务器相关的配置
+//	err := e.SendWithTLS(SendAddr, smtp.PlainAuth("", Sender, AuthorizationCode, SmtpServer), &tls.Config{ServerName: SmtpServer})
+//
+//	log.Printf("开始发送-发送邮件用户:%s\n", toUserEmail)
+//	logger = log.New(logFile, "[send_email_res]", log.Lshortfile|log.Ldate|log.Ltime)
+//	logger.Printf("开始发送-发送邮件用户：%s\n", toUserEmail)
+//	if err != nil {
+//		//发送失败
+//		logger.Printf("email %s;err：%s\n", toUserEmail, err)
+//		//log.Fatalf("send error email:%s; %s\n", toUserEmail, err)
+//	}
+//	//发送成功
+//	logger.Printf("email %s；success：%s\n", toUserEmail, err)
+//	log.Println("send success.......")
+//}
+//
+//func handleExcel() {
+//
+//	var logger *log.Logger
+//	logPath := "./send_res.log"
+//	logFile, errs := os.OpenFile(logPath, os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+//	if errs != nil {
+//		panic(errs)
+//	}
+//
+//	fmt.Println("处理用户邮箱的excel...")
+//	filesTwo, err := excelize.OpenFile("./test.xlsx")
+//	if err != nil {
+//		fmt.Println(err.Error())
+//		return
+//	}
+//
+//	var sheetCountEmail []string
+//	valueRow, err := filesTwo.GetRows("Sheet1")
+//	for _, row := range valueRow {
+//		for _, colCell := range row {
+//			sheetCountEmail = append(sheetCountEmail, colCell)
+//			handleMail(colCell, logger, logFile)
+//		}
+//	}
+//	fmt.Println("Email总数：", len(sheetCountEmail))
+//
+//}
+//
+//// 随机数
+//func generateRandomNumber(start int, end int, count int) []int {
+//	//范围检查
+//	if end < start || (end-start) < count {
+//		return nil
+//	}
+//
+//	//存放结果的slice
+//	nums := make([]int, 0)
+//	//随机数生成器，加入时间戳保证每次生成的随机数不一样
+//	r := rand.New(rand.NewSource(time.Now().UnixNano()))
+//	for len(nums) < count {
+//		//生成随机数
+//		num := r.Intn(end-start) + start
+//
+//		//查重
+//		exist := false
+//		for _, v := range nums {
+//			if v == num {
+//				exist = true
+//				break
+//			}
+//		}
+//
+//		if !exist {
+//			nums = append(nums, num)
+//		}
+//	}
+//
+//	return nums
+//}
+//
+//func personEmail() {
+//	e := email.NewEmail()
+//	//设置发送方的邮箱
+//	e.From = "yaoyuan <249575799@qq.com>"
+//	// 设置接收方的邮箱
+//	e.To = []string{"ages521you@hotmail.com"}
+//	// //设置抄送如果抄送多人逗号隔开
+//	// e.Cc = []string{"XXX@qq.com",XXX@qq.com}
+//	// //设置秘密抄送
+//	// e.Bcc = []string{"XXX@qq.com"}
+//	//设置主题
+//	e.Subject = "这是主题"
+//	//设置文件发送的内容
+//	// e.Text = []byte("www.topgoer.com是个不错的go语言中文文档")
+//	//            background-attachment: fixed;
+//	//https://oss.5eplay.com/editor/20221212/a40a757ca48205b401ec25d92ef9ba97.jpg
+//	e.HTML = []byte(`
+//	<!DOCTYPE html>
+//<html>
+//    <head>
+//        <style>body{
+//            background-color:black;
+//            background-image: url("https://d00.paixin.com/thumbs/1655708/26742459/staff_1024.jpg");
+//            background-repeat: no-repeat;
+//            background-size: 100% 100%;
+//            color: white;
+//            }</style>
+//    </head>
+//<body>
+//<p></p>
+//  <h2>尊敬的姚源先生:</h2>
+//  我们收到了您的绑定邮箱申请，请使用下面的验证码进行绑定。
+//  <h1>以下是您的验证码</h1>
+//  <p><font size="13" color="purple">0879</font>
+//
+//  <p><i>请注意：该验证码将在5分钟后过期，请尽快使用</p>
+//  <p><i>如非本人操作，请您放心忽略此邮件</p>
+//  <p><i>(此为系统邮件，请勿回复)</p>
+//</body></html>
+//    `)
+//	//设置服务器相关的配置
+//	err := e.Send("smtp.qq.com:25", smtp.PlainAuth("", "249575799@qq.com", "wygoxrirdeaubhca", "smtp.qq.com"))
+//	if err != nil {
+//		log.Fatal(err)
+//	}
+//}
+//func compressStr(str string) string {
+//	if str == "" {
+//		return ""
+//	}
+//	//匹配一个或多个空白符的正则表达式
+//	reg := regexp.MustCompile("\\s+")
+//	return reg.ReplaceAllString(str, "")
+//}
+//func randomItem(key int32) []string {
+//	// randKey := generateRandomNumber(0, 5, 1)
+//	// fmt.Println(randKey[0])
+//	emailIem := [...][5]string{
+//		{"activity1@5eplay.com", "cnQUy9tHZPJMfvFr"},
+//		{"activity2@5eplay.com", "hPK3ENAtoUVmGhfD"},
+//		{"activity3@5eplay.com", "Bf9Q5usFibjRGMUD"},
+//		{"activity4@5eplay.com", "43WHv2NKF8uGGdhS"},
+//		{"activity5@5eplay.com", "iMDSjBNmMFEDHfmg"},
+//	}
+//	email := emailIem[key]
+//	return email[:]
+//}
+//
+//func handleMailTwo() {
+//	randKey := generateRandomNumber(0, 5, 1)
+//	emailAccount := randomItem(int32(randKey[0]))
+//	fromUserEmail := emailAccount[0]     //邮箱账号
+//	authorizationCode := emailAccount[1] //邮箱授权码
+//	e := email.NewEmail()
+//	//设置发送方的邮箱
+//	e.From = "5E对战平台 <" + fromUserEmail + ">"
+//	// 设置接收方的邮箱
+//	e.To = []string{"ages521you@hotmail.com"}
+//	//设置主题
+//
+//	e.Subject = "adfasdfasdfas"
+//	//设置文件发送的内容
+//	// e.HTML = []byte(`
+//	// 				<img data-imagetype="External" src="https://oss.5eplay.com/images/act/3db413d2c02246088b6efde4c443ec9e.jpg" class="x_fullMobileWidth" width="620" alt="5E对战平台" title="5E对战平台" style="display:block; height:auto; border:0; width:700px; max-width:100%">`)
+//	sendContext := getEmailContext("yaoyuan", "123123")
+//	e.HTML = []byte(sendContext)
+//	go func() {
+//		err := e.SendWithTLS(SendAddr, smtp.PlainAuth("", fromUserEmail, authorizationCode, SmtpServer), &tls.Config{ServerName: SmtpServer})
+//
+//		if err != nil {
+//			//发送失败
+//
+//			log.Printf("send error email:%s; %s\n", "yaoyuan", err)
+//		}
+//	}()
+//	//设置服务器相关的配置
+//
+//	//发送成功
+//	log.Println("send success.......")
+//
+//}
+//func getEmailContext(nickName, verificationCode string) string {
+//	sendContext := fmt.Sprintf(`
+//	<div style=" margin: 24px 0; display: flex; justify-content: center">
+//		<includetail>
+//			<div style="width: 538px; height: 751px; background: linear-gradient(-45deg, #2f2f2f, #404040)">
+//				<div style="width: 538px; height: 66px; background: linear-gradient(-90deg, #2f2f2f, #404040); display: flex; align-items: center">
+//					<img
+//						style="width: 129px; height: 52px; margin-left: 29px"
+//						src="https://oss.5eplay.com/playground/resources/dev/chest_img/9c81ca7e587c9135177292ac114d5bf7"
+//					/>
+//				</div>
+//				<div style="width: 538px; height: 1px; background: linear-gradient(-90deg, #474747, #525252)"></div>
+//				<div style="padding: 62px 0 0 39px">
+//					<div style="font-size: 21px; font-family: Microsoft YaHei; font-weight: bold; color: #c7c7c7; letter-spacing: 1px">
+//						%s，您好！
+//					</div>
+//					<div
+//						style="
+//							width: 418px;
+//							margin-top: 35px;
+//							font-size: 17px;
+//							font-family: Microsoft YaHei;
+//							font-weight: bold;
+//							color: #c7c7c7;
+//							line-height: 29px;
+//							letter-spacing: 1px;
+//						"
+//					>
+//						我们收到了您的绑定邮箱申请，请使用下面的验证码 进行绑定
+//					</div>
+//					<div
+//						style="
+//							font-size: 17px;
+//							font-family: Microsoft YaHei;
+//							font-weight: bold;
+//							color: #c7c7c7;
+//							margin-top: 89px;
+//							margin-bottom: 19px;
+//							letter-spacing: 1px;
+//						"
+//					>
+//						以下是您的验证码
+//					</div>
+//					<div
+//						style="
+//							width: 458px;
+//							height: 97px;
+//							line-height: 97px;
+//							text-align: center;
+//							background: #535353;
+//							box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+//							border-radius: 2px;
+//							font-size: 48px;
+//							font-family: Microsoft YaHei;
+//							font-weight: bold;
+//							color: #ffbc3b;
+//							letter-spacing: 5px;
+//						"
+//					>
+//						%s
+//					</div>
+//					<div
+//						style="
+//							font-size: 17px;
+//							font-family: Microsoft YaHei;
+//							font-weight: bold;
+//							color: #c7c7c7;
+//							margin-top: 29px;
+//							margin-bottom: 99px;
+//							letter-spacing: 1px;
+//						"
+//					>
+//						请注意：该验证码将在5分钟后过期，请尽快使用！
+//					</div>
+//					<div
+//						style="
+//							width: 306px;
+//							font-size: 17px;
+//							font-family: Microsoft YaHei;
+//							font-weight: bold;
+//							color: #c7c7c7;
+//							line-height: 29px;
+//							letter-spacing: 1px;
+//						"
+//					>
+//						如非本人操作，请您放心忽略此邮件。 (此为系统邮件，请勿回复）
+//					</div>
+//				</div>
+//			</div>
+//		</includetail>
+//	</div>
+//    `, nickName, verificationCode)
+//	return sendContext
+//}
+//func VerifyEmailFormat(email string) bool {
+//	pattern := `\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*` //匹配电子邮箱
+//	reg := regexp.MustCompile(pattern)
+//	return reg.MatchString(email)
+//}
