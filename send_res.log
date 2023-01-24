@@ -30,3 +30,114 @@
 [send_email_res]2023/01/13 19:05:15 main.go:143: email zhaixinlong@dingtalk.com；success：%!s(<nil>)
 [send_email_res]2023/01/13 19:05:15 main.go:136: 开始发送-发送邮件用户：18056151033@163.com
 [send_email_res]2023/01/13 19:05:15 main.go:143: email 18056151033@163.com；success：%!s(<nil>)
+[send_email_res]2023/01/20 23:43:01 main.go:146: 开始发送-发送邮件用户：2893454750@qq.com
+[send_email_res]2023/01/20 23:43:01 main.go:149: email 2893454750@qq.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:153: email 2893454750@qq.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:146: 开始发送-发送邮件用户：jiangyao@5eplay.com
+[send_email_res]2023/01/20 23:43:01 main.go:149: email jiangyao@5eplay.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:153: email jiangyao@5eplay.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:146: 开始发送-发送邮件用户：1602146377@qq.com
+[send_email_res]2023/01/20 23:43:01 main.go:149: email 1602146377@qq.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:153: email 1602146377@qq.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:146: 开始发送-发送邮件用户：shanqiuoji@qq.com
+[send_email_res]2023/01/20 23:43:01 main.go:149: email shanqiuoji@qq.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:153: email shanqiuoji@qq.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:146: 开始发送-发送邮件用户：diwangtseb@dingtalk.com
+[send_email_res]2023/01/20 23:43:01 main.go:149: email diwangtseb@dingtalk.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:153: email diwangtseb@dingtalk.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:146: 开始发送-发送邮件用户：hxl1599366641@163.com
+[send_email_res]2023/01/20 23:43:01 main.go:149: email hxl1599366641@163.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:153: email hxl1599366641@163.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:146: 开始发送-发送邮件用户：hxl1599366641@sina.com
+[send_email_res]2023/01/20 23:43:01 main.go:149: email hxl1599366641@sina.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:153: email hxl1599366641@sina.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:146: 开始发送-发送邮件用户：772079926@qq.com
+[send_email_res]2023/01/20 23:43:01 main.go:149: email 772079926@qq.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:153: email 772079926@qq.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:146: 开始发送-发送邮件用户：xiulei.He1599366641@gmail.com
+[send_email_res]2023/01/20 23:43:01 main.go:149: email xiulei.He1599366641@gmail.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:153: email xiulei.He1599366641@gmail.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:146: 开始发送-发送邮件用户：1599366641@qq.com
+[send_email_res]2023/01/20 23:43:01 main.go:149: email 1599366641@qq.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:01 main.go:153: email 1599366641@qq.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:13 main.go:146: 开始发送-发送邮件用户：276373799@qq.com
+[send_email_res]2023/01/20 23:43:13 main.go:149: email 276373799@qq.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:13 main.go:153: email 276373799@qq.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:13 main.go:146: 开始发送-发送邮件用户：18056151033@163.com
+[send_email_res]2023/01/20 23:43:13 main.go:149: email 18056151033@163.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:13 main.go:153: email 18056151033@163.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:13 main.go:146: 开始发送-发送邮件用户：394918198@qq.com
+[send_email_res]2023/01/20 23:43:13 main.go:149: email 394918198@qq.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:13 main.go:153: email 394918198@qq.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:13 main.go:146: 开始发送-发送邮件用户：zhaixinlong@dingtalk.com
+[send_email_res]2023/01/20 23:43:13 main.go:149: email zhaixinlong@dingtalk.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:13 main.go:153: email zhaixinlong@dingtalk.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:13 main.go:146: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2023/01/20 23:43:13 main.go:149: email ages521you@hotmail.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:13 main.go:153: email ages521you@hotmail.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:21 main.go:146: 开始发送-发送邮件用户：zhaixinlong@dingtalk.com
+[send_email_res]2023/01/20 23:43:21 main.go:149: email zhaixinlong@dingtalk.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:43:21 main.go:153: email zhaixinlong@dingtalk.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:44:29 main.go:145: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2023/01/20 23:44:29 main.go:148: email ages521you@hotmail.com;err：mail: missing '@' or angle-addr
+[send_email_res]2023/01/20 23:44:29 main.go:152: email ages521you@hotmail.com；success：mail: missing '@' or angle-addr
+[send_email_res]2023/01/20 23:45:43 main.go:145: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2023/01/20 23:45:43 main.go:148: email ages521you@hotmail.com;err：mail: missing '@' or angle-addr
+[send_email_res]2023/01/20 23:45:43 main.go:152: email ages521you@hotmail.com；success：mail: missing '@' or angle-addr
+[send_email_res]2023/01/20 23:45:57 main.go:145: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2023/01/20 23:45:57 main.go:148: email ages521you@hotmail.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:45:57 main.go:152: email ages521you@hotmail.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:46:45 main.go:145: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2023/01/20 23:46:45 main.go:148: email ages521you@hotmail.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:46:45 main.go:152: email ages521you@hotmail.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:47:09 main.go:146: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2023/01/20 23:47:09 main.go:149: email ages521you@hotmail.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:47:09 main.go:153: email ages521you@hotmail.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:47:27 main.go:146: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2023/01/20 23:47:27 main.go:149: email ages521you@hotmail.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:47:27 main.go:153: email ages521you@hotmail.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:47:53 main.go:146: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2023/01/20 23:47:53 main.go:149: email ages521you@hotmail.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:47:53 main.go:153: email ages521you@hotmail.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:48:08 main.go:146: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2023/01/20 23:48:08 main.go:149: email ages521you@hotmail.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:48:08 main.go:153: email ages521you@hotmail.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:49:05 main.go:146: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2023/01/20 23:49:05 main.go:153: email ages521you@hotmail.com；success：%!s(<nil>)
+[send_email_res]2023/01/20 23:50:14 main.go:146: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2023/01/20 23:50:14 main.go:153: email ages521you@hotmail.com；success：%!s(<nil>)
+[send_email_res]2023/01/20 23:51:43 main.go:146: 开始发送-发送邮件用户：249575799@qq.com
+[send_email_res]2023/01/20 23:51:43 main.go:149: email 249575799@qq.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:51:43 main.go:153: email 249575799@qq.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:51:44 main.go:146: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2023/01/20 23:51:44 main.go:153: email ages521you@hotmail.com；success：%!s(<nil>)
+[send_email_res]2023/01/20 23:56:18 main.go:146: 开始发送-发送邮件用户：249575799@qq.com
+[send_email_res]2023/01/20 23:56:18 main.go:149: email 249575799@qq.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:56:18 main.go:153: email 249575799@qq.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:56:18 main.go:146: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2023/01/20 23:56:18 main.go:149: email ages521you@hotmail.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:56:18 main.go:153: email ages521you@hotmail.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:56:18 main.go:146: 开始发送-发送邮件用户：lyyiqiu@163.com
+[send_email_res]2023/01/20 23:56:18 main.go:149: email lyyiqiu@163.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:56:18 main.go:153: email lyyiqiu@163.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:57:31 main.go:146: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2023/01/20 23:57:31 main.go:149: email ages521you@hotmail.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:57:31 main.go:153: email ages521you@hotmail.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:57:31 main.go:146: 开始发送-发送邮件用户：249575799@qq.com
+[send_email_res]2023/01/20 23:57:31 main.go:149: email 249575799@qq.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:57:31 main.go:153: email 249575799@qq.com；success：550 Connection frequency limited
+[send_email_res]2023/01/20 23:57:31 main.go:146: 开始发送-发送邮件用户：lyyiqiu@163.com
+[send_email_res]2023/01/20 23:57:31 main.go:149: email lyyiqiu@163.com;err：550 Connection frequency limited
+[send_email_res]2023/01/20 23:57:31 main.go:153: email lyyiqiu@163.com；success：550 Connection frequency limited
+[send_email_res]2023/01/21 08:07:19 main.go:146: 开始发送-发送邮件用户：lyyiqiu@163.com
+[send_email_res]2023/01/21 08:07:19 main.go:153: email lyyiqiu@163.com；success：%!s(<nil>)
+[send_email_res]2023/01/21 08:07:19 main.go:146: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2023/01/21 08:07:19 main.go:153: email ages521you@hotmail.com；success：%!s(<nil>)
+[send_email_res]2023/01/21 08:07:19 main.go:146: 开始发送-发送邮件用户：249575799@qq.com
+[send_email_res]2023/01/21 08:07:19 main.go:153: email 249575799@qq.com；success：%!s(<nil>)
+[send_email_res]2023/01/21 08:10:38 main.go:146: 开始发送-发送邮件用户：ages521you@hotmail.com
+[send_email_res]2023/01/21 08:10:38 main.go:153: email ages521you@hotmail.com；success：%!s(<nil>)
+[send_email_res]2023/01/21 08:10:38 main.go:146: 开始发送-发送邮件用户：249575799@qq.com
+[send_email_res]2023/01/21 08:10:38 main.go:153: email 249575799@qq.com；success：%!s(<nil>)
+[send_email_res]2023/01/21 08:10:38 main.go:146: 开始发送-发送邮件用户：lyyiqiu@163.com
+[send_email_res]2023/01/21 08:10:38 main.go:153: email lyyiqiu@163.com；success：%!s(<nil>)

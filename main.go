@@ -119,6 +119,15 @@ func handleMail(mail *sheetCountEmail, logger *log.Logger, logFile *os.File) {
 	fromUserEmail := emailAccount[0]     //邮箱账号
 	authorizationCode := emailAccount[1] //邮箱授权码
 
+	//stringItem := [...][5]string{
+	//	{"activity1@5eplay.com", "cnQUy9tHZPJMfvFr"},//err
+	//	{"activity2@5eplay.com", "hPK3ENAtoUVmGhfD"},//err
+	//	{"activity3@5eplay.com", "Bf9Q5usFibjRGMUD"},
+	//	{"activity4@5eplay.com", "43WHv2NKF8uGGdhS"},
+	//	{"activity5@5eplay.com", "iMDSjBNmMFEDHfmg"},
+	//fromUserEmail := "activity4@5eplay.com"
+	//authorizationCode := "43WHv2NKF8uGGdhS"
+
 	e := email.NewEmail()
 	//设置发送方的邮箱
 	e.From = "5E对战平台 <" + fromUserEmail + ">"
@@ -129,6 +138,7 @@ func handleMail(mail *sheetCountEmail, logger *log.Logger, logFile *os.File) {
 	//设置文件发送的内容
 	e.HTML = []byte(getEmailContext(mail.Code))
 	////设置服务器相关的配置
+	fmt.Println("fromUserEmail:", fromUserEmail)
 	err := e.SendWithTLS(SendAddr, smtp.PlainAuth("", fromUserEmail, authorizationCode, SmtpServer), &tls.Config{ServerName: SmtpServer})
 
 	log.Printf("开始发送-发送邮件用户:%s\n", mail.Email)
