@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd1feb0c-13ea-4d1f-83f2-49caffc71709" name="Changes" comment="email">
-      <change beforePath="$PROJECT_DIR$/bindEmail.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/bindEmail.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/send_res.log" beforeDir="false" afterPath="$PROJECT_DIR$/send_res.log" afterDir="false" />
-    </list>
+    <list default="true" id="fd1feb0c-13ea-4d1f-83f2-49caffc71709" name="Changes" comment="email" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

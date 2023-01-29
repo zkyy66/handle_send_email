@@ -15,8 +15,8 @@ import (
 )
 
 const (
-	Sender            = "activity@5eplay.com"
-	AuthorizationCode = "VDMSmoQE92KnewP2"
+	Sender            = "xxx"
+	AuthorizationCode = "xxx"
 	SmtpServer        = "smtp.exmail.qq.com"
 	SendAddr          = SmtpServer + ":465"
 )
@@ -119,15 +119,6 @@ func handleMail(mail *sheetCountEmail, logger *log.Logger, logFile *os.File) {
 	fromUserEmail := emailAccount[0]     //邮箱账号
 	authorizationCode := emailAccount[1] //邮箱授权码
 
-	//stringItem := [...][5]string{
-	//	{"activity1@5eplay.com", "cnQUy9tHZPJMfvFr"},//err
-	//	{"activity2@5eplay.com", "hPK3ENAtoUVmGhfD"},//err
-	//	{"activity3@5eplay.com", "Bf9Q5usFibjRGMUD"},
-	//	{"activity4@5eplay.com", "43WHv2NKF8uGGdhS"},
-	//	{"activity5@5eplay.com", "iMDSjBNmMFEDHfmg"},
-	//fromUserEmail := "activity4@5eplay.com"
-	//authorizationCode := "43WHv2NKF8uGGdhS"
-
 	e := email.NewEmail()
 	//设置发送方的邮箱
 	e.From = "5E对战平台 <" + fromUserEmail + ">"
@@ -194,7 +185,7 @@ func getEmailContext(exchangeCode string) string {
           style="
             width: 799px;
             height: 898px;
-            background-image: url(https://oss.5eplay.com/playground/resources/dev/chest_img/0495cff0d721e4cf3728eb99c0cae474);
+            background-image: url(xxx);
             background-size: 799px 898px;
             overflow: hidden;
           "
@@ -215,7 +206,7 @@ func getEmailContext(exchangeCode string) string {
         </div>
         <img
           style="width: 799px; display: block"
-          src="https://oss.5eplay.com/playground/resources/dev/chest_img/433b81d8d8ff14d5748fd87afa819c60"
+          src="xxx"
         />
       </div>
     </div>
@@ -225,11 +216,11 @@ func getEmailContext(exchangeCode string) string {
 
 func randomItem(key int32) []string {
 	stringItem := [...][5]string{
-		{"activity1@5eplay.com", "cnQUy9tHZPJMfvFr"},
-		{"activity2@5eplay.com", "hPK3ENAtoUVmGhfD"},
-		{"activity3@5eplay.com", "Bf9Q5usFibjRGMUD"},
-		{"activity4@5eplay.com", "43WHv2NKF8uGGdhS"},
-		{"activity5@5eplay.com", "iMDSjBNmMFEDHfmg"},
+		{"xxx.com", "xxx"},
+		{"xxx.com", "xxx"},
+		{"xxx.com", "xxx"},
+		{"xxx.com", "xxx"},
+		{"xxx.com", "xxx"},
 	}
 	emailItem := stringItem[key]
 	return emailItem[:]
